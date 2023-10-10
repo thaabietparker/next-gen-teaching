@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{authblk}
+\usepackage{float}
+\usepackage{xr}
+\usepackage{siunitx}
+\usepackage[left=2cm,%
+                right=2cm,%
+                top=2.25cm,%
+                bottom=2.25cm,%
+                headheight=12pt,%
+                letterpaper]{geometry}
+
+\setlength{\parskip}{\baselineskip} % set paragraph spacing
+\setlength{\parindent}{0pt}
+
+\usepackage{natbib}       
+\bibliographystyle{apalike}
+
+%\externaldocument{figures}
+%\externaldocument{appendices}
+
+% Redefine \maketitle
+\makeatletter
+% Redefine \maketitle
+\renewcommand{\maketitle}{%
+  \begin{flushleft} % Left align the title
+    {\LARGE\bfseries\@title\par} % Increase font size of title
+    \vspace{0.5em} % Add vertical space between title and author
+    \normalsize\@author\par % Increase font size of author
+    \vspace{0.5em} % Add vertical space between author and date
+    \normalsize\@date\par % Increase font size of date
+  \end{flushleft}
+}
+\makeatother
+
+\title{A beginners guide to phylogenetic analysis next-generation-sequencing data}
+\date{}
+
+\author[1,2]{Thaabiet Parker}
+
+\affil[1]{Foundational Biodiversity Research, The Compton Herbarium, South African National Biodiversity Institute, Private Bag X7, Newlands, Cape Town 7700, South Africa}
+\affil[2]{Department of Biological Sciences and Bolus Herbarium, University of Cape Town, Private Bag X3, 7701, Rondebosch, South Africa}
+
+\begin{document}
+\raggedright
+\maketitle
+\raggedright
+\begin{sloppypar}
+
+\section{Getting started}
+\subsection{Terminology}
+\paragraph*{K-mers} A k-mer refers to all possible substrings of length \textbf{k} that are contained in a string e.g. sequence \textbf{ATGCA} has 4 different sets of k-mers. They are useful for computation purposes, error-correction (rare k-mers are more likely to be caused by sequence errors and improvement of alignment)
+
+\end{sloppypar}
+\end{document}
