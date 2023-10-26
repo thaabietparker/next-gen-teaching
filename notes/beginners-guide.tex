@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{authblk}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage[left=2cm,%
+                right=2cm,%
+                top=2.25cm,%
+                bottom=2.25cm,%
+                headheight=12pt,%
+                letterpaper]{geometry}
+\setlength{\parskip}{\baselineskip} % set paragraph spacing
+\setlength{\parindent}{0pt}
+% Redefine \maketitle
+\makeatletter
+% Redefine \maketitle
+\renewcommand{\maketitle}{%
+  \begin{flushleft} % Left align the title
+    {\LARGE\bfseries\@title\par} % Increase font size of title
+    \vspace{0.5em} % Add vertical space between title and author
+    \normalsize\@author\par % Increase font size of author
+    \vspace{0.5em} % Add vertical space between author and date
+    \normalsize\@date\par % Increase font size of date
+  \end{flushleft}
+}
+\makeatother
+
+\title{A beginners handbook to species delimitation using next-generation-sequencing data}
+\date{26 October 2023}
+
+\author[1,2]{Thaabiet Parker}
+
+\affil[1]{Department of Biological Sciences and Bolus Herbarium, University of Cape Town, Private Bag X3, 7701, Rondebosch, South Africa}
+\affil[2]{Foundational Biodiversity Research, The Compton Herbarium, South African National Biodiversity Institute, Private Bag X7, Newlands, Cape Town 7700, South Africa}
+
+\begin{document}
+\raggedright
+\maketitle
+\raggedright
+\begin{sloppypar}
+
+\section{Introduction}
+\section{How you get your data}
+\subsection{Illumina sequencing requirements}
+
+\subsection{Illumina sequencing workflow}
+\subsubsection{Library preparation}
+\subsubsection{Sequencing}
+
+\section{How you analyse your data}
+\subsection{Data formats}
+\subsection{Linux and high performance computing clusters}
+\subsection{Bioinformatic workflow}
+\subsubsection{Quality control reads}
+\subsubsection{Align reads}
+\subsubsection{Call variants}
+\subsubsection{Filter data}
+\subsubsection{Assess evolutionary questions}
+
+\section{Detailed workflows}
+\subsection{Complete workflows}
+\paragraph{dDocent}
+\paragraph{Stacks}
+\paragraph{FastGBS}
+\subsection{Personal workflows}
+\subsubsection{GBS with no reference genome}
+\subsubsection{GBS with reference genome}
+
+\section{Glossary}
+
+
+
+
+
+\end{sloppypar}
+\end{document}
